@@ -1,0 +1,13 @@
+services:
+  al2:
+    image: adduc/exercise-systemd:amazonlinux-2
+    stop_signal: SIGKILL
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
+  al2022:
+    image: adduc/exercise-systemd:amazonlinux-2
+    stop_signal: SIGKILL
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
